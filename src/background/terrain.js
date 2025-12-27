@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import GrassBlade from './grass/grassBlade.js';
 import terrainVertex from './terrainVertex.glsl'
 import colorFragment from './commons/shaders/colorFragment.glsl';
+import { COLORS } from './constants.js';
 
 
 export default class Terrain {
@@ -18,7 +19,7 @@ export default class Terrain {
     curve = (t) => 1,
     segments = 100,
     grassCount = 1000,
-    color = 0x1f4c2f,
+    color = new THREE.Color(COLORS.MAP),
   } = {}) {
     this.group = new THREE.Group();
     this.curve = curve;
@@ -57,7 +58,7 @@ export default class Terrain {
         uOpacity: { value: 1},
         uFogNear: { value: 2.0 },
         uFogFar: { value: 10.0 },
-        uFogColor: { value: new THREE.Color(0xd2fae0) },
+        uFogColor: { value: new THREE.Color(COLORS.FOG) },
       },
       vertexShader: terrainVertex,
       fragmentShader: colorFragment,
@@ -71,7 +72,7 @@ export default class Terrain {
     for (let i = 0; i < grassCount; i++) {
       const t = Math.random();
       const x = (t - 0.5) * width;
-      const y = curve(t); // hauteur exacte du terrain
+      const y = curve(t) - 0.01; // hauteur du terrain
 
       const blade = new GrassBlade({
         height: THREE.MathUtils.lerp(0.1, 0.6, Math.random()),
@@ -80,7 +81,7 @@ export default class Terrain {
         color: color, 
       });
 
-      blade.mesh.position.set(x, y, Math.random() * 0.3);
+      blade.mesh.position.set(x, y, 0);
       blade.mesh.rotation.z = THREE.MathUtils.lerp(-0.3, 0.3, Math.random());
 
       this.group.add(blade.mesh);
@@ -103,10 +104,7 @@ export default class Terrain {
    * @param {THREE.Vector2} dir
    */
   setWindDirection(dir) {
-    this.group.children.forEach((child) => {
-      if (child.material && child.material.uniforms?.uWindDirection)
-        child.material.uniforms.uWindDirection.value.copy(dir);
-    });
+    //TODO
   }
 
   /**

@@ -14,11 +14,9 @@ export default class OakTree extends THREE.Group {
             //trunkBranchCount = 4,
         } = params;
 
-        
         // trunk
         this.trunk = new TreeTrunk({height: height, colorBottom: color, colorTop: color});
         this.add(this.trunk)
-
         
         // leaves
         this.leaves = new Leaves({color: color});
@@ -26,6 +24,7 @@ export default class OakTree extends THREE.Group {
         this.add(this.leaves);
     }
 
+    
     update(time) {
         this.children.forEach(child => {
             if (typeof child.update === 'function') {

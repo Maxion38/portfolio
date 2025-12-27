@@ -1,13 +1,14 @@
 import * as THREE from 'three';
-import grassBladeVertex from './grassBladeVertex.glsl'
-import grassBladeFragment from './grassBladeFragment.glsl'
+import { COLORS } from '../constants.js';
+import grassBladeVertex from './grassBladeVertex.glsl';
+import colorFragment from '../commons/shaders/colorFragment.glsl';
 
 export default class GrassBlade {
   constructor({
     height = 1,
     baseWidth = 0.1,
     tipWidth = 0.005,
-    color = new THREE.Color(0x1f4c2f),
+    color = new THREE.Color(COLORS.MAP),
     windStrength = 0.15,
     windSpeed = 2.0,
     segments = 8,
@@ -34,17 +35,18 @@ export default class GrassBlade {
     const material = new THREE.ShaderMaterial({
       uniforms: {
         uTime: { value: 0 },
+        uOpacity: { value: 1},
         uWindStrength: { value: windStrength },
         uWindSpeed: { value: windSpeed },
         uWindDirection: { value: new THREE.Vector2(1, 0) }, // → droite
         uColor: { value: color },
         uFogNear: { value: 2.0 },
         uFogFar: { value: 10.0 },
-        uFogColor: { value: new THREE.Color(0xd2fae0) },
+        uFogColor: { value: new THREE.Color(COLORS.FOG) },
       },
 
       vertexShader: grassBladeVertex,
-      fragmentShader: grassBladeFragment,
+      fragmentShader: colorFragment,
       side: THREE.DoubleSide,
     });
 
