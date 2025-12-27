@@ -1,0 +1,39 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#greeting {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;  
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  text-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.2),
+    0 2px 3px rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  border-radius: 20px;
+  backdrop-filter: blur(15px) saturate(0.7);
+  background: color-mix(in srgb, white 25%, transparent);
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow:
+    /*5px 5px 5px rgba(0, 0, 0, 0.4),*/
+    inset 0 0 8px 8px rgba(180, 180, 180, 0.3);
+}
