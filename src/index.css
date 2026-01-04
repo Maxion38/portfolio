@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* --- Point navigation --- */
+:root {
+  --swiper-pagination-bullet-size: 12px; 
+  --swiper-pagination-bullet-horizontal-gap: 10px; 
+  --swiper-pagination-color: white;
+}
+
+/* toutes les bullets blanches */
+.swiper-pagination-bullet {
+  background: white !important;      /* couleur des bullets non actives */
+  width: var(--swiper-pagination-bullet-size);
+  height: var(--swiper-pagination-bullet-size);
+  border-radius: 50%;
+  margin-bottom: 10px !important;
+  transition: all 0.3s ease;
+}
+
+/* bullet actif entouré */
+.swiper-pagination-bullet-active {
+  background: white; /* reste blanc à l'intérieur */
+  position: relative; /* nécessaire pour le ::after */
+}
+
+/* contour espacé et centré */
+.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centre parfaitement */
+  width: calc(var(--swiper-pagination-bullet-size) + 8px); /* bullet + espace */
+  height: calc(var(--swiper-pagination-bullet-size) + 8px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  pointer-events: none; /* ne bloque pas le clic */
+}

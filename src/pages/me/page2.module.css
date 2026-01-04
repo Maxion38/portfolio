@@ -1,0 +1,26 @@
+.container {
+    /* background-color:rgba(245, 245, 220, 0.247); */
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;    
+    /* background-color: red; */
+    margin: 0; /* <- important */
+    padding: 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    border-color: rgb(107, 107, 107);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: rgba(172, 172, 172, 0.726);
+}
+

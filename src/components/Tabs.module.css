@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    gap: 12px;    
+    padding: 24px 40px;
+}
+
+.right {
+  margin-left: auto; 
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+  transition: all 0.2s ease, color 0.2s ease;
+}
+
+.active {
+  border: 1.5px solid white;
+}
+
+.button:hover {
+  color: black;
+  border-color: black;
+}
