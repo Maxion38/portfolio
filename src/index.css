@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Funnel Sans", sans-serif;
 }
 
 /* --- Point navigation --- */
@@ -39,4 +40,65 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   pointer-events: none; /* ne bloque pas le clic */
+}
+
+
+/* --- SWIPER --- */
+/*
+.swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-slide:not(.swiper-slide-active) .heavy {
+  display: none;
+}
+
+.swiper-slide-active .heavy {
+  display: block;
+}*/
+
+
+iframe, div {
+  caret-color: transparent; /* supprime le caret clignotant */
+}
+
+
+article {
+  max-width: 800px;  /* largeur max du texte */
+  margin: 0 auto;    /* centrer horizontalement */
+  padding: 20px;
+  line-height: 1.6;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+
+}
+
+h1 {
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 0.9em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  font-size: 0.7em;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
 }

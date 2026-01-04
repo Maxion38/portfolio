@@ -1,0 +1,34 @@
+.page {
+  height: 94%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-right: 3rem; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.article {
+  text-align: justify;
+  max-width: 800px; 
+}
+
+.row {
+  display: flex;
+  gap: 1rem; 
+}
+
+.pdf {
+  width: 100%;
+  height: 95%;
+  border: none;
+}
+
+.noMargin {
+  margin: 0;
+}

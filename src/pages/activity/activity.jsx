@@ -1,6 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";
-import styles from './activity.module.css'
+// import styles from './activity.module.css'
+import Page1 from "./page1";
+import Page2 from "./page2";
+import Page3 from "./page3";
+import Page4 from "./page4";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,15 +21,19 @@ export default function Activity({ setActiveTab }) {
       style={{ height: "100%" }}
     >
       <SwiperSlide>
-        <section className={styles.page}>Page 1</section>
+        <Page1 />
       </SwiperSlide>
 
       <SwiperSlide>
-        <section className={styles.page}>Page 2</section>
+        <Page2 />
       </SwiperSlide>
 
       <SwiperSlide>
-        <section className={styles.page}>Page 3<div className={styles.test}></div></section>
+        <Page3 />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <Page4 />
       </SwiperSlide>
     </Swiper>
   );

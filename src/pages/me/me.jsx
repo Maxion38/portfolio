@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 
-export default function Me() {
+export default function Me({ setActiveTab }) {
   return (
     <Swiper
       modules={[Pagination, Mousewheel]}
@@ -30,7 +30,7 @@ export default function Me() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <Page3 />
+        <Page3 setActiveTab={setActiveTab} />
       </SwiperSlide>
     </Swiper>
   );

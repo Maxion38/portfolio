@@ -1,0 +1,58 @@
+.page {
+  height: 94%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding-left: 3rem; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.article {
+  text-align: justify;
+  max-width: 800px; 
+}
+
+.row {
+  display: flex;
+  gap: 1rem; 
+}
+
+.pdf {
+  width: 100%;
+  height: 95%;
+  border: none;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 56.25%;
+  padding-bottom: 100%; /* 16:9 ratio */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.downloadRow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem; 
+}
