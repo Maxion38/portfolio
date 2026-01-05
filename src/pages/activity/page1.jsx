@@ -1,5 +1,6 @@
 import styles from './page1.module.css';
 import glassStyles from '../../components/glass.module.css';
+import { FaDownload } from "react-icons/fa6";
 
 export default function Page1() {
   return (
@@ -32,24 +33,27 @@ export default function Page1() {
         <div className={styles.row}>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps comptabilisé : <strong>5h</strong>
+              Temps comptabilisé <strong className={styles.strong}>10h</strong>
             </p>
           </div>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps réel : <strong>30h+</strong>
+              Temps réel <strong className={styles.strong}>~25h</strong>
             </p>
           </div>
+          <a
+            href="/Mes-formations-technofutur.pdf"
+            download
+            className={styles.a}
+          >
+            <div className={glassStyles.glassButton}>
+              <div className={styles.downloadRow}>
+                <p className={styles.noMargin}>Attestation de suivis</p>
+                <FaDownload size="1.5rem" />
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-
-      {/* Bloc PDF */}
-      <div className={styles.container}>
-        <iframe
-          src="/Mes-formations-technofutur.pdf"
-          className={styles.pdf}
-          title="PDF Viewer"
-        />
       </div>
     </div>
   );

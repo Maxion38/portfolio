@@ -1,45 +1,45 @@
 import styles from './page4.module.css';
 import glassStyles from '../../components/glass.module.css';
+import MPPhoto from '../../assets/Mathieu-Petieau-transparent.png';
 
 export default function Page4() {
   return (
     <div className={styles.page}>
-      {/* Bloc PDF */}
-      <div className={styles.container}>
-        <div className={styles.videoWrapper}>
-          <iframe 
-            src="https://www.youtube.com/embed/phqxWMqESNs" 
-            allowFullScreen
-          />
-        </div>
-      </div>
 
-      {/* Bloc texte + stats */}
+      {/* text */}
       <div className={styles.container}>
         <div className={glassStyles.glass}>
           <article className={styles.article}>
-            <h1>Projet d'intégration</h1>
+            <h1>Conférence de Mathieu Petieau</h1>
             <p>
-              Dans le cadre de mon cours de projet d'intégration en 3eme année, nous 
-              avons décidé dans notre groupe de 6 de faire un projet complexe : le but 
-              était de réussir à trier automatiquement de petits composants électroniques 
-              (résistances, capacitors, led, etc) dans leurs boites respectives. Ce 
-              projet à été riche en découvertes tant il y avait d'aspects à découvrir et 
-              apprendre : entrainement d'une IA pour la détection par image des 
-              composants, construction d'un bras robotique à l'aide d'un kit bon marché, 
-              programmation des moteurs, construction d'un site pour démarrer un tri et 
-              répertorier les composants et intégration de tout cela ensemble pour que le
-              tout fonctionne (communication site - robot - camera IA).
+              Dans le cadre de mon cours de traitements des signaux en 3eme année, nous 
+              avons assisté à une conférence de la part de Mathieu Petieau. Cette 
+              conférence m'a marqué de part la prestation de Mr Petieau et aussi parce 
+              qu'elle abordait un sujet très intéressant : les signaux 
+              électroencéphalogramme. Ce sont des signaux que notre cerveau émets et qui
+              sont différents en fonction de notre activité. Ces signaux, Mr Petieau à
+              pu les intercepter sur un élève grace à un appreil disposé sont sa tête.
+              L'élève à alors pu faire décoller un drone connecté au système, uniquement
+              grâce à sa pensé. Il s'est détendu et l'appareil à alors détecté cela et 
+              lancé la commande de décollage du drone.  
             </p>
 
             <h2>Expérience acquise</h2>
             <p>
-              Le travail réalisé à été monstrueux tant il y avait à faire. Ce projet nous 
-              a tous appris à bien communiquer, séparer proprement le travail entre nous 
-              réaliser des réunions, des jours de travail ensembles d'autres en solo. Cela
-              m'a évidemment été grandement utile pour mon stage étant donné que je me suis
-              rentrouvé à nouveau au sein d'une équipe, ce qui fait que j'étais familier
-              avec les outils utilisés et le méthodes de travail en équipe.
+              J'ai adoré le sujet abordé et cela m'a permis d'étendre ma curiosité. Durant
+              mon stage je me suis rendu compte que la curiosité est un élément imortant 
+              en informatique tant il y a de technologies existantes qui existe. Durant mon
+              stage par exemple j'ai été missionné d'explorer la technologie Flutter que je
+              ne connaissait pas. Ma curiosité m'a alors permis d'approfondir beaucoup le 
+              sujet et apporter des éléments important pour l'entreprise quant à cette 
+              technologie.
+            </p>
+
+            <h2>Attestation</h2>
+            <p>
+              Je n'ai pas trouvé de preuve de présence mais cette conférence à fait partie du
+              cours de traitements de signaux et il y avait une question sur cette conférence
+              dans dans l'examen. 
             </p>
           </article>
         </div>
@@ -47,15 +47,20 @@ export default function Page4() {
         <div className={styles.row}>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps comptabilisé : <strong>10h</strong>
+              Temps comptabilisé <strong className={styles.strong}>2h</strong>
             </p>
           </div>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps réel : <strong>70h+</strong>
+              Temps réel <strong className={styles.strong}>2h</strong>
             </p>
           </div>
         </div>
+      </div>
+      
+      {/* image */}
+      <div className={styles.container}>
+        <img src={MPPhoto} alt="Moi" className={styles.photo} />
       </div>
     </div>
   );

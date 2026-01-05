@@ -47,12 +47,12 @@ export default function Page3() {
         <div className={styles.row}>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps comptabilisé : <strong>10h</strong>
+              Temps comptabilisé <strong className={styles.strong}>10h</strong>
             </p>
           </div>
           <div className={glassStyles.glass}>
             <p className={styles.noMargin}>
-              Temps réel : <strong>30h</strong>
+              Temps réel <strong className={styles.strong}>30h</strong>
             </p>
           </div>
           <a

@@ -5,6 +5,7 @@ import Page1 from "./page1";
 import Page2 from "./page2";
 import Page3 from "./page3";
 import Page4 from "./page4";
+import Page5 from "./page5";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -34,6 +35,10 @@ export default function Activity({ setActiveTab }) {
 
       <SwiperSlide>
         <Page4 />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <Page5 />
       </SwiperSlide>
     </Swiper>
   );

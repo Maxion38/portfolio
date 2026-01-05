@@ -1,13 +1,14 @@
 .page {
   height: 94%;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  padding-left: 3rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem; 
@@ -15,18 +16,17 @@
 
 .article {
   text-align: justify;
-  max-width: 800px; 
+  max-width: 1600px; 
+}
+
+.articlesContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .row {
   display: flex;
   gap: 1rem; 
-}
-
-.pdf {
-  width: 100%;
-  height: 95%;
-  border: none;
 }
 
 .noMargin {
@@ -35,9 +35,10 @@
 
 .videoWrapper {
   position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
+  width: 30%;
+  aspect-ratio: 16 / 9;
+  border: 4px solid white;
+  border-radius: 10px;
 }
 
 .videoWrapper iframe {
@@ -46,6 +47,11 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   border: none;
 }
 
+.times {
+  display: flex;
+  justify-content: center;
+}

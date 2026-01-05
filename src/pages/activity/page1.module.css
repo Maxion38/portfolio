@@ -1,8 +1,8 @@
 .page {
   height: 94%;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  padding-right: 3rem; 
+  padding-right: 50px; 
+  padding-bottom: 40px;
 }
 
 .container {
@@ -23,12 +23,18 @@
   gap: 1rem; 
 }
 
-.pdf {
-  width: 100%;
-  height: 95%;
-  border: none;
-}
-
 .noMargin {
   margin: 0;
+}
+
+.downloadRow {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem; 
+}
+
+.strong {
+  margin-left: 0.2rem;
 }

@@ -1,8 +1,8 @@
 .page {
   height: 94%;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  padding-left: 3rem; 
+  grid-template-columns: 3fr 2fr;
+  padding-left: 5rem; 
 }
 
 .container {
@@ -15,7 +15,7 @@
 
 .article {
   text-align: justify;
-  max-width: 800px; 
+  max-width: 1000px; 
 }
 
 .row {
@@ -49,3 +49,6 @@
   border: none;
 }
 
+.strong {
+  margin-left: 0.2rem;
+}

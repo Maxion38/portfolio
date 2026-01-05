@@ -4,7 +4,7 @@ import glassStyles from '../../components/glass.module.css';
 export default function Page2() {
   return (
     <div className={styles.page}>
-      {/* Bloc PDF */}
+      {/* Video */}
       <div className={styles.container}>
         <div className={styles.videoWrapper}>
           <iframe 
@@ -13,10 +13,21 @@ export default function Page2() {
           />
         </div>
       </div>
-
-      {/* Bloc texte + stats */}
-      <div className={styles.container}>
+      <div className={styles.times}>
         <div className={glassStyles.glass}>
+          <p className={styles.noMargin}>
+            Temps comptabilisé <strong>15h</strong>
+          </p>
+        </div>
+        <div className={glassStyles.glass}>
+          <p className={styles.noMargin}>
+            Temps réel <strong>70h+</strong>
+          </p>
+        </div>
+      </div>
+      {/* Texts */}
+      <div className={styles.container}>
+        <div className={` ${glassStyles.glass} ${glassStyles.articlesContainer} `}>
           <article className={styles.article}>
             <h1>Projet d'intégration</h1>
             <p>
@@ -31,7 +42,8 @@ export default function Page2() {
               répertorier les composants et intégration de tout cela ensemble pour que le
               tout fonctionne (communication site - robot - camera IA).
             </p>
-
+          </article>
+          <article className={styles.article}>
             <h2>Expérience acquise</h2>
             <p>
               Le travail réalisé à été monstrueux tant il y avait à faire. Ce projet nous 
@@ -43,20 +55,8 @@ export default function Page2() {
             </p>
           </article>
         </div>
-
-        <div className={styles.row}>
-          <div className={glassStyles.glass}>
-            <p className={styles.noMargin}>
-              Temps comptabilisé : <strong>10h</strong>
-            </p>
-          </div>
-          <div className={glassStyles.glass}>
-            <p className={styles.noMargin}>
-              Temps réel : <strong>70h+</strong>
-            </p>
-          </div>
-        </div>
       </div>
+
     </div>
   );
 }
