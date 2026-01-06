@@ -10,6 +10,7 @@
 .card {
   perspective: 1000px;
   cursor: pointer;
+  /* width: min(90vw, 1500px); */
 }
 
 /* L’inner définit la hauteur selon le contenu */
@@ -49,4 +50,13 @@
 /* Important : donne du flux */
 .front {
   position: relative;
+}
+
+.article {
+  max-width: 1500px;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
 }

@@ -1,6 +1,7 @@
 import styles from './page5.module.css';
 import glassStyles from '../../components/glass.module.css';
 import odoo from '../../assets/odoo.png';
+import { MdBookmarkAdded } from "react-icons/md";
 
 export default function Page5() {
   return (
@@ -16,21 +17,12 @@ export default function Page5() {
           <article className={styles.article}>
             <h1>Visite de odoo</h1>
             <p>
-              Avec l'EPHEC nous avons eu droit à un visite des bureaux de ODOO à 
-              Louvain-La-Neuve. D'une part nous avons visité les bureaux, nous avons aussi
-              eu des informations sur ce qu'es l'entreprise, son histoire et comment elle
-              fonctionne aujourd'hui. Nous avons aussi eu une démo : chaqu'un avec notre 
-              portable avions pour objectif de récuperer du code et trouver une erreur puis
-              la corriger. Pour cela nous avions à disposition plusieurs outils. 
+Avec l’EPHEC, nous avons eu droit à une visite des bureaux d’ODOO à Louvain-la-Neuve. D’une part, nous avons découvert les locaux, et d’autre part, nous avons reçu des informations sur l’entreprise, son histoire et son fonctionnement actuel. Nous avons également assisté à une démo : chacun de nous, avec notre ordinateur portable, avions pour objectif de récupérer du code, identifier une erreur, puis la corriger. Pour cela, plusieurs outils étaient à notre disposition.
             </p>
 
-            <h2>Expérience acquise</h2>
+            <h2><MdBookmarkAdded size={"1em"} /> Monde professionnel</h2>
             <p>
-              Cette expérience était très intéressante que ce soit pour comprendre comment 
-              s'organise une grosse entreprise à plusieurs miliers d'employés dans le monde.
-              Ou pour tester par nous même leurs outils et moyens de travail. Cela m'a permis
-              de savoir à quoi m'attendre pour mon stage étant donné que mon stage s'est fait 
-              à la BGL qui est aussi une grosse entreprise à plusieurs miliers d'employés.  
+Cette expérience était très intéressante, que ce soit pour comprendre comment s’organise une grosse entreprise comptant plusieurs milliers d’employés dans le monde, ou pour tester par nous-mêmes leurs outils et moyens de travail. Cela m’a permis de savoir à quoi m’attendre pour mon stage, étant donné que celui-ci s’est déroulé à la BGL, qui est également une grosse entreprise comptant plusieurs milliers d’employés. 
             </p>
           </article>
         </div>

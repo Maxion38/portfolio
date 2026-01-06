@@ -1,6 +1,7 @@
 import styles from './page4.module.css';
 import glassStyles from '../../components/glass.module.css';
 import MPPhoto from '../../assets/Mathieu-Petieau-transparent.png';
+import { MdBookmarkAdded } from "react-icons/md";
 
 export default function Page4() {
   return (
@@ -12,34 +13,20 @@ export default function Page4() {
           <article className={styles.article}>
             <h1>Conférence de Mathieu Petieau</h1>
             <p>
-              Dans le cadre de mon cours de traitements des signaux en 3eme année, nous 
-              avons assisté à une conférence de la part de Mathieu Petieau. Cette 
-              conférence m'a marqué de part la prestation de Mr Petieau et aussi parce 
-              qu'elle abordait un sujet très intéressant : les signaux 
-              électroencéphalogramme. Ce sont des signaux que notre cerveau émets et qui
-              sont différents en fonction de notre activité. Ces signaux, Mr Petieau à
-              pu les intercepter sur un élève grace à un appreil disposé sont sa tête.
-              L'élève à alors pu faire décoller un drone connecté au système, uniquement
-              grâce à sa pensé. Il s'est détendu et l'appareil à alors détecté cela et 
-              lancé la commande de décollage du drone.  
+Dans le cadre de mon cours de traitement des signaux en 3ᵉ année, nous avons assisté à une conférence donnée par Mathieu Petieau. Cette conférence m'a marqué, tant par la prestation de M. Petieau que par le sujet très intéressant abordé : les signaux électroencéphalogramme (EGG). Ce sont des signaux émis par notre cerveau et qui varient en fonction de notre activité. M. Petieau a pu capter ces signaux sur un élève grâce à un appareil placé sur sa tête. L'élève a alors pu faire décoller un drone connecté au système, uniquement par la pensée : lorsqu’il s’est détendu, l’appareil a détecté ce changement et a lancé la commande de décollage du drone. 
             </p>
 
-            <h2>Expérience acquise</h2>
+            <h2><MdBookmarkAdded size={"1em"}/>Curiosité</h2>
             <p>
-              J'ai adoré le sujet abordé et cela m'a permis d'étendre ma curiosité. Durant
-              mon stage je me suis rendu compte que la curiosité est un élément imortant 
-              en informatique tant il y a de technologies existantes qui existe. Durant mon
-              stage par exemple j'ai été missionné d'explorer la technologie Flutter que je
-              ne connaissait pas. Ma curiosité m'a alors permis d'approfondir beaucoup le 
-              sujet et apporter des éléments important pour l'entreprise quant à cette 
-              technologie.
+J'ai adoré le sujet abordé et cela m'a permis de développer ma curiosité. Durant mon stage, je me suis rendu compte que la curiosité est un élément important en informatique, tant il existe de technologies différentes. J'ai été missionné pour explorer la technologie Flutter que je ne connaissais pas. Ma curiosité m'a alors permis d’approfondir le sujet et d’apporter des éléments importants pour l’entreprise concernant cette technologie.
             </p>
 
             <h2>Attestation</h2>
             <p>
-              Je n'ai pas trouvé de preuve de présence mais cette conférence à fait partie du
-              cours de traitements de signaux et il y avait une question sur cette conférence
-              dans dans l'examen. 
+              Je n'ai pas trouvé de preuve de présence étant donné que se sont les professeurs
+              qui ont pris les présences mais cette conférence était obligatoire dans le cadre du
+              cours de traitements de signaux (il y avait une question sur cette conférence
+              dans l'examen).
             </p>
           </article>
         </div>

@@ -8,7 +8,8 @@ export default function SkillCard({ title, level, text }) {
   const height = 180;
 
   const handleClick = () => {
-    setFlipped(!flipped); // inverse l'état à chaque clic
+    // TODO
+    //setFlipped(!flipped); // inverse l'état à chaque clic
   };
 
   return (

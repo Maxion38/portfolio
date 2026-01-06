@@ -28,7 +28,7 @@ export default function Page2() {
   <section className={`${layout.page} ${styles.container}`}>
     <div className={styles.row}>
       <div className={`${glassStyles.glass} ${styles.title}`}>
-        Voici les différentes technologies que j'ai pu apprendre. Retournez la carte pour en savoir plus.
+        Voici les différentes technologies que j'ai pu apprendre.
       </div>
     </div>
 

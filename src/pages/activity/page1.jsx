@@ -1,6 +1,7 @@
 import styles from './page1.module.css';
 import glassStyles from '../../components/glass.module.css';
 import { FaDownload } from "react-icons/fa6";
+import { MdBookmarkAdded } from "react-icons/md";
 
 export default function Page1() {
   return (
@@ -9,23 +10,25 @@ export default function Page1() {
       <div className={styles.container}>
         <div className={glassStyles.glass}>
           <article className={styles.article}>
-            <h1>Formations au développement WEB</h1>
+            <h1>Formations au développement Web</h1>
             <p>
-              Dans le cadre de mon cours de développement informatique en première année,
-              nous avons suivis 5 formations "technofutur" dans le but d'apprendre pleins
-              de choses liées au développement web. L'une portait sur le développement JS,
-              une sur HTML5, une sur CSS, une sur la recherche d'information sur internet
-              et une sur la création d'un site web.
+              Dans le cadre de mon cours de développement informatique en première année, 
+              nous avons suivi cinq formations proposées par Technofutur, visant à 
+              acquérir des compétences variées liées au développement web. Une formation 
+              portait sur JavaScript, une autre sur HTML5, une sur CSS, une sur la 
+              recherche d’informations sur Internet et enfin une sur la création d’un 
+              site web.
             </p>
 
-            <h2>Expérience acquise</h2>
+            <h2><MdBookmarkAdded size={"1em"} />Compétences techniques Web</h2>
             <p>
-              Ces différents thèmes sont la base pour le développement WEB et une porte
-              d'entrée courante pour la programmation. Ces formations m'ont appris les
-              bases de tout ce qui est nécessaire pour la suite. Sans tout cela, je
-              n'aurais pas pu apprendre la programmation et je n'aurais pas été plus loin.
-              De plus, cela m'a été très utile pour mon stage étant donné que je programme
-              une appli mobile/web.
+              Ces différents thèmes constituent les bases du développement web et sont 
+              une première approche de la programmation. Ces formations m’ont permis 
+              d’acquérir des connaissances essentielles pour progresser par la suite. 
+              Sans elles, il m’aurait été difficile d’aller plus loin dans l’apprentissage 
+              de la programmation. Elles m’ont également été très utiles pour mon stage, 
+              où je développe une application mobile et web et où je dois effectuer des 
+              recherches efficaces sur Internet pour me documenter.
             </p>
           </article>
         </div>

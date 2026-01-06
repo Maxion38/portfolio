@@ -1,12 +1,12 @@
 import styles from './page3.module.css';
 import glassStyles from '../../components/glass.module.css';
 import { FaDownload } from "react-icons/fa6";
-
+import { MdBookmarkAdded } from "react-icons/md";
 
 export default function Page3() {
   return (
     <div className={styles.page}>
-      {/* Bloc PDF */}
+      {/* Bloc YTB */}
       <div className={styles.container}>
         <div className={styles.videoWrapper}>
           <iframe 
@@ -22,24 +22,12 @@ export default function Page3() {
           <article className={styles.article}>
             <h1>Expérience internationale</h1>
             <p>
-              Dans le cadre de mon cours "semaine internationale", j'ai pu partir en
-              Finlande dans l'école "SAMK Campus Pori" pour réaliser un projet qui lie des
-              électromécaniciens et des développeurs ensemble pour construire un cart 
-              avec un programme lui permettant de se parquer de manière autonaume dans un 
-              emplacement. Nous étions une équipe de 2 programmeurs et 3 électromécaniciens.
-              J'ai adoré la projet et notre cart à bel et bien réussi à se parquer.
+              Dans le cadre de mon cours « semaine internationale », j'ai pu partir en Finlande à l'école SAMK Campus Pori pour réaliser un projet réunissant des électromécaniciens et des développeurs afin de construire un cart équipé d’un programme lui permettant de se garer de manière autonome dans un emplacement. Nous étions une équipe de deux programmeurs et trois électromécaniciens. J'ai adoré ce projet et notre cart a bel et bien réussi à se garer.
             </p>
 
-            <h2>Expérience acquise</h2>
+            <h2><MdBookmarkAdded size={"1em"} />Esprit d'équipe</h2>
             <p>
-              Encore une fois le travail d'équipe était très important d'autant plus que 
-              nous parlions tous dans une autre langue que notre langue maternelle (Anglais)
-              étant donné nous étions avec 2 éleves de la SAMK Pori. Mais l'ambiance était
-              géniale parce que après le travail nous partions faire des activitées en 
-              Finlande ce qui renforcait tous les jours plus notre équipe. C'est là que 
-              j'apprends qu'être dans une équipe ou tout le monde s'entends bien est 
-              primordial. Je fais un parralèlle avec cette histoire et le team building que 
-              j'ai pu faire avec mon équipe durant mon stage. 
+              Encore une fois, le travail d’équipe était très important, d’autant plus que nous parlions tous en anglais puisque nous étions avec deux élèves de la SAMK Pori. L’ambiance était géniale, car après le travail nous partions faire des activités en Finlande, ce qui renforçait chaque jour davantage notre équipe. C’est là que j’ai appris qu’être dans une équipe où tout le monde s’entend bien est primordial. Je fais un parallèle entre cette expérience et le team building que j’ai pu vivre avec mon équipe durant mon stage.
             </p>
           </article>
         </div>

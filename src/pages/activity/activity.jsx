@@ -6,6 +6,7 @@ import Page2 from "./page2";
 import Page3 from "./page3";
 import Page4 from "./page4";
 import Page5 from "./page5";
+import Page6 from "./page6";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -39,6 +40,12 @@ export default function Activity({ setActiveTab }) {
 
       <SwiperSlide>
         <Page5 />
+      </SwiperSlide>
+
+      {/* Roadbook tracker */}
+
+      <SwiperSlide>
+        <Page6 />
       </SwiperSlide>
     </Swiper>
   );

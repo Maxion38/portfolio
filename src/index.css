@@ -83,21 +83,24 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.1em;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   color: rgb(0, 0, 0);
 }
 
 h2 {
-  font-size: 0.9em;
+  font-size: clamp(1.125rem, 2.5vw, 1.75rem);
   color: rgb(0, 0, 0);
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 p {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
   margin-bottom: 1.5em;
   margin-top: 0.5em;
-  font-size: 0.7em;
-  line-height: 1.6;
 }
 
 a {
