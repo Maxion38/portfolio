@@ -4,34 +4,31 @@ import glassStyles from "./glass.module.css";
 
 export default function SkillCard({ title, level, text }) {
   const [flipped, setFlipped] = useState(false);
+  const width = level * 5.5;
+  const height = 180;
 
   const handleClick = () => {
-    //TODO
-    //setFlipped(!flipped);
+    // TODO
+    //setFlipped(!flipped); // inverse l'état à chaque clic
   };
 
   return (
-    <div className={styles.flipCard} onClick={handleClick}>
+    <div
+      className={styles.flipCard}
+      style={{ width: `${width}px`, height: `${height}px` }}
+      onClick={handleClick}
+    >
       <div
         className={`${styles.flipCardInner} ${flipped ? styles.flipped : ""}`}
       >
         {/* Face avant */}
         <div className={`${glassStyles.glassButton} ${styles.flipCardFront}`}>
           <span className={styles.name}>{title}</span>
-
-          {/* Exemple d’usage du level (sans impacter la taille) */}
-          <div className={styles.levelBar}>
-            <div
-              className={styles.levelFill}
-              style={{ width: `${level}%` }}
-            />
-          </div>
         </div>
 
         {/* Face arrière */}
-        
         <div className={`${glassStyles.glassButton} ${styles.flipCardBack}`}>
-          <span className={styles.text}>{text}</span>
+          <span className={styles.name}>{text}</span>
         </div>
       </div>
     </div>

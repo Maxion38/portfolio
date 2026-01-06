@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";
-import styles from './stage.module.css'
+import styles from './Stage.module.css'
 import Page1 from './page1';
 import Page2 from './page2';
 
@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 
-export default function Stage({ setActiveTab }) {
+export default function Stage() {
   return (
     <Swiper
       modules={[Pagination, Mousewheel]}

@@ -1,4 +1,4 @@
-import styles from './me.module.css'
+import styles from './Me.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";
 import Page1 from './page1';
@@ -30,7 +30,7 @@ export default function Me({ setActiveTab }) {
       </SwiperSlide>
 
       <SwiperSlide>
-        <Page3 setActiveTab={setActiveTab} />
+        <Page3 />
       </SwiperSlide>
     </Swiper>
   );

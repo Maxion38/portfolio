@@ -74,17 +74,19 @@ article {
   padding: 20px;
   line-height: 1.6;
   color: #222;
+  text-align: justify;
+
 }
 
 h1, h2, h3 {
   font-weight: bold;
   margin: 0;
-
 }
 
 h1 {
   font-size: clamp(1.5rem, 4vw, 3rem);
   color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 h2 {
@@ -94,6 +96,13 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 
 p {
@@ -105,8 +114,4 @@ p {
 
 a {
   text-decoration: none;
-}
-
-article {
-  text-align: justify;
 }

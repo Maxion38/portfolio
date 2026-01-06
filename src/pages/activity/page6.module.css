@@ -1,27 +1,21 @@
 .page {
   height: 94%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 3rem; 
+  padding-bottom: 3rem; 
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem; 
 }
 
 .article {
-  text-align: justify;
-  max-width: 1600px; 
-}
-
-.articlesContainer {
-  display: flex;
-  flex-direction: row;
+  max-width: 800px; 
 }
 
 .row {
@@ -35,7 +29,7 @@
 
 .videoWrapper {
   position: relative;
-  width: 30%;
+  width: clamp(40%, 70%, 85%);
   aspect-ratio: 16 / 9;
   border: 4px solid white;
   border-radius: 10px;
@@ -54,4 +48,8 @@
 .times {
   display: flex;
   justify-content: center;
+}
+
+.strong {
+  margin-left: 0.2rem;
 }

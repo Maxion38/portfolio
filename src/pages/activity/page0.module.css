@@ -1,0 +1,46 @@
+.page {
+  height: 94%;
+  display: grid;
+  padding-right: 50px; 
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.article {
+  text-align: justify;
+  max-width: 1200px; 
+}
+
+.row {
+  display: flex;
+  gap: 1rem; 
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.strong {
+  margin-left: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
