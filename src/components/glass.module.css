@@ -18,8 +18,6 @@
 }
 
 .glassButton {
-  padding: 15px 10px;
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -32,12 +30,12 @@
     0 2px 3px rgba(0, 0, 0, 0.3);
   line-height: 1.5;
   letter-spacing: 0.01em;
-  border-radius: 20px;
-  backdrop-filter: blur(15px) saturate(0.7);
+  border-radius: 50px;
+  backdrop-filter: blur(15px) saturate(1.2);
   background: color-mix(in srgb, white 30%, transparent);
   border: 3px solid rgb(255, 255, 255);
   box-shadow:
-    inset 0 0 8px 8px rgba(200, 200, 200, 0.6);
+    inset 0 0 12px 12px rgba(200, 200, 200, 0.8);
   transition: all 0.2s ease-out;
 }
 
@@ -52,4 +50,5 @@
   background: transparent;
   border: 3px solid rgb(255, 255, 255);
   cursor: pointer;
+  transition: all 0.05s ease-out;
 }

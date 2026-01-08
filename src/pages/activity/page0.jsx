@@ -23,7 +23,7 @@ export default function Page0() {
           </article>
         </div>
         <div className={styles.row}>
-          <div className={` ${glassStyles.glass} ${glassStyles.topics} `}>
+          <div className={` ${glassStyles.glass} ${styles.topics} `}>
             <h3><MdBookmarkAdded size={"1em"} />Compétences techniques Web</h3>
             <h3><MdBookmarkAdded size={"1em"} />Organisation</h3>
             <h3><MdBookmarkAdded size={"1em"} />Esprit d'équipe</h3>

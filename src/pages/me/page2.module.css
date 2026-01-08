@@ -1,3 +1,9 @@
+.page {
+    height: 100%;
+    display: flex;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,6 @@
   padding: 2rem;
 }
 
-/* Titre */
 .header {
   display: flex;
   justify-content: center;

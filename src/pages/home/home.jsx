@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <div className={glassStyles.glass} style={{ width: "30%", height: '6.5%', marginTop: '3%'}}>
+      <div className={`${glassStyles.glass} ${styles.title}`} style={{ width: "30%", height: '6.5%', marginTop: '3%'}}>
         Bienvenue sur mon portfolio !
       </div>
 

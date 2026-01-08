@@ -22,7 +22,7 @@ const skills = [
 
 export default function Page2() {
   return (
-    <section className={`${layout.page} ${styles.container}`}>
+    <section className={`${styles.page} ${styles.container}`}>
       <div className={styles.header}>
         <div className={`${glassStyles.glass} ${styles.title}`}>
           Voici les différentes technologies que j'ai pu apprendre
