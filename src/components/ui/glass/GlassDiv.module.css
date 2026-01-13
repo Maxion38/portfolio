@@ -1,0 +1,33 @@
+.layout {
+    box-sizing: border-box;
+    padding: 30px 40px;
+    max-width: 900px;
+}
+
+.textStyle {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;     
+    flex-direction: column;  
+}
+
+.scrollContent {
+    flex: 1;          
+    overflow-y: auto; 
+    padding-right: 5px;
+}
+
+.scrollContent:focus {
+  outline: none;
+}
+
+.scrollContent:focus-visible {
+  outline: 3px solid rgba(255, 0, 0, 0.603);
+  border-radius: 8px;
+  outline-offset: 2px;
+}

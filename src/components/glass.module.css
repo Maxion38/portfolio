@@ -1,16 +1,10 @@
 .glass {
-  padding: 15px 10px;
-  margin: 10px;
-
-  font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.85);
   text-shadow:
     0 1px 1px rgba(255, 255, 255, 0.2),
     0 2px 3px rgba(0, 0, 0, 0.3);
-  line-height: 1.5;
-  letter-spacing: 0.01em;
   border-radius: 20px;
-  backdrop-filter: blur(15px) saturate(0.7);
+  backdrop-filter: blur(8px) saturate(0.7);
   background: color-mix(in srgb, white 30%, transparent);
   border: 3px solid rgb(255, 255, 255);
   box-shadow:
@@ -18,18 +12,10 @@
 }
 
 .glassButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
   text-shadow:
     0 1px 1px rgba(255, 255, 255, 0.2),
     0 2px 3px rgba(0, 0, 0, 0.3);
-  line-height: 1.5;
-  letter-spacing: 0.01em;
   border-radius: 50px;
   backdrop-filter: blur(15px) saturate(1.2);
   background: color-mix(in srgb, white 30%, transparent);

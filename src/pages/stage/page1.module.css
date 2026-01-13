@@ -1,21 +1,9 @@
-/* page1.module.css */
 .page {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  padding-bottom: 30px;
-}
-
-.card {
-  overflow: hidden;
-}
-
-.scrollContent {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto; 
-  padding-right: 5px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
